@@ -1,0 +1,76 @@
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ar.com.coninf</groupId>
+	<artifactId>interfaz-webservices</artifactId>
+	<version>3.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>interfaz-webservices</name>
+  	<url>http://www.coninf.com.ar</url>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<hibernate.validator.version>5.1.1.Final</hibernate.validator.version>
+		<entorno>dev</entorno>
+	</properties>	
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<entorno>dev</entorno>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<entorno>test</entorno>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<entorno>prod</entorno>
+			</properties>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encodong>UTF-8</encodong>
+					<additionalProjectFacets>
+						<jst.java>1.7</jst.java>
+					</additionalProjectFacets>
+					<additionalBuildcommands>
+						<buildcommand>org.eclipse.wst.common.project.facet.core.builder</buildcommand>
+						<buildcommand>org.eclipse.wst.validation.validationbuilder</buildcommand>
+						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+					</additionalBuildcommands>
+					<additionalProjectnatures>
+						<projectnature>org.eclipse.wst.common.project.facet.core.nature</projectnature>
+						<projectnature>org.eclipse.wst.common.modulecore.ModuleCoreNature</projectnature>
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
+		</dependency>	
+	</dependencies>
+</project>
