@@ -5,7 +5,7 @@
 
 	<groupId>ar.com.coninf</groupId>
 	<artifactId>interfaz-webservices</artifactId>
-	<version>3.0.0</version>
+	<version>3.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>interfaz-webservices</name>
@@ -72,5 +72,12 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate.validator.version}</version>
 		</dependency>	
+	
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.12</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>

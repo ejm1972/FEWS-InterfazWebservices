@@ -5,10 +5,11 @@ import ar.com.coninf.doconline.rest.model.tx.ITransaccionable;
 
 public class Response implements ITransaccionable {
 	private static final long serialVersionUID = 7055289016766675431L;
+	
 	private Integer codigo;
 	private String descripcion;
 	private String observacion;
-	public Boolean esReintento = Boolean.FALSE;
+	private Boolean esReintento = Boolean.FALSE;
 	
 	public Response(){
 	}

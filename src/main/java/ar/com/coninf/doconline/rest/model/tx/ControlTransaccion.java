@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class ControlTransaccion implements Serializable {
 	private static final long serialVersionUID = 5244484866071825026L;
+	
 	private Long nroTransaccion;
 	private Integer interfaz;
 	private String idSesion;
