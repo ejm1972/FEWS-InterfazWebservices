@@ -8,7 +8,7 @@ public class PeriodoComprobanteAsociado implements Serializable {
 	private String fechaDesde;
 	private String fechaHasta;
 
-	public String fechaHasta() {
+	public String getFechaDesde() {
 		return fechaDesde;
 	}
 	public void setFechaDesde(String desde) {
