@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import ar.com.coninf.doconline.rest.model.tx.ComprobanteAsociado;
 import ar.com.coninf.doconline.rest.model.tx.DatoOpcional;
 import ar.com.coninf.doconline.rest.model.tx.Iva;
+import ar.com.coninf.doconline.rest.model.tx.PeriodoComprobanteAsociado;
 import ar.com.coninf.doconline.rest.model.tx.Tributo;
 
 public class RequestAutorizarComprobante extends Request {
@@ -35,6 +36,7 @@ public class RequestAutorizarComprobante extends Request {
 	private Iva[] ivas;
 	private ComprobanteAsociado[] comprobantesAsociados;
 	private DatoOpcional[] datosOpcionales;
+	private PeriodoComprobanteAsociado[] periodoComprobanteAsociados;
 	
 	//tributo_id=4 						--> Id de la tablas de AFIP
 	//tributo_desc="Impuestos internos"	--> Desc de la Tabla de AFIP 
@@ -190,5 +192,12 @@ public class RequestAutorizarComprobante extends Request {
 	}
 	public void setDatosOpcionales(DatoOpcional[] datosOpcionales) {
 		this.datosOpcionales = datosOpcionales;
+	}
+	
+	public PeriodoComprobanteAsociado[] getPeriodoComprobanteAsociados() {
+		return periodoComprobanteAsociados;
+	}
+	public void setPeriodoComprobanteAsociados(PeriodoComprobanteAsociado[] periodoComprobanteAsociados) {
+		this.periodoComprobanteAsociados = periodoComprobanteAsociados;
 	}
 }
