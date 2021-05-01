@@ -30,7 +30,8 @@ public enum ErrorEnum {
 	ERROR_DIFERENCIA_TOTAL_FACTURA(14001, "Diferencia en la suma de Importes contra Total de Factura."),
 	ERROR_PENDIENTE_AUTORIZADO(14002, "Movimiento pendiente ya Autorizado."),
 	ERROR_DIFERENCIA_TOTAL_IVA(14003, "Diferencia en la suma de Ivas contra Total de Iva."),
-
+	ERROR_DIFERENCIA_TOTAL_TRIBUTO(14004, "Diferencia en la suma de Tributos contra Total de Tributo."),
+	
 	ERROR_ORIGEN_AFIP(15001, "Ocurrio Error en AFIP."),
 	ERROR_COMUNICACION_AFIP(15002, "Ocurrio de Comunicacion de AFIP."),
 
@@ -88,7 +89,8 @@ public enum ErrorEnum {
 	ERROR_FORMATO_CLAVE_INCORRECTO(53, "El formato de la clave es incorrecto."),
 	ERROR_CLAVE_REPETIDA(54, "La clave esta repetida."),
 	ERROR_OPERACION_NO_PERMITIDA_CANAL_VENTA(56, "El Canal de Venta no tiene la operacion permitida.")
-;
+	;
+	
 	private int cod;
 	private String desc;
 	
@@ -101,16 +103,8 @@ public enum ErrorEnum {
 		return cod;
 	}
 
-	public void setCod(int cod) {
-		this.cod = cod;
-	}
-
 	public String getDesc() {
 		return desc;
-	}
-
-	public void setDesc(String desc) {
-		this.desc = desc;
 	}
 	
 }
