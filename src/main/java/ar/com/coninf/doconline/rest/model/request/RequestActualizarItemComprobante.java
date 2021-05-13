@@ -4,9 +4,12 @@ import java.math.BigDecimal;
 
 import ar.com.coninf.doconline.rest.model.tx.TipoIva;
 import ar.com.coninf.doconline.rest.model.tx.Tributo;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class RequestActualizarItemComprobante extends Request {
-
 	private static final long serialVersionUID = 1L;
 	public static final String SERVICIO = "/autorizar/comprobante";
 	
@@ -43,132 +46,4 @@ public class RequestActualizarItemComprobante extends Request {
 	//iva_base_imp=100.00
 	//iva_importe=21.00 	--> Alicuota de la tabla de AFIP
 	//{"iva_id":"5", "iva_base_imp":"100.00", "iva_importe":"21.00"} --> JSON
-
-	public String getCuit() {
-		return cuit;
-	}
-	public void setCuit(String cuit) {
-		this.cuit = cuit;
-	}
-	
-	public Integer getConcepto() {
-		return concepto;
-	}
-	public void setConcepto(Integer concepto) {
-		this.concepto = concepto;
-	}
-	public Integer getTipoDoc() {
-		return tipoDoc;
-	}
-	public void setTipoDoc(Integer tipoDoc) {
-		this.tipoDoc = tipoDoc;
-	}
-	public Long getNroDoc() {
-		return nroDoc;
-	}
-	public void setNroDoc(Long nroDoc) {
-		this.nroDoc = nroDoc;
-	}
-	public Integer getTipoCbte() {
-		return tipoCbte;
-	}
-	public void setTipoCbte(Integer tipoCbte) {
-		this.tipoCbte = tipoCbte;
-	}
-	public Integer getPtoVta() {
-		return ptoVta;
-	}
-	public void setPtoVta(Integer ptoVta) {
-		this.ptoVta = ptoVta;
-	}
-	public Long getNroCbte() {
-		return nroCbte;
-	}
-	public void setNroCbte(Long nroCbte) {
-		this.nroCbte = nroCbte;
-	}
-	public BigDecimal getImpTotal() {
-		return impTotal;
-	}
-	public void setImpTotal(BigDecimal impTotal) {
-		this.impTotal = impTotal;
-	}
-	public BigDecimal getImpTotConcNoGrav() {
-		return impTotConcNoGrav;
-	}
-	public void setImpTotConcNoGrav(BigDecimal impTotConcNoGrav) {
-		this.impTotConcNoGrav = impTotConcNoGrav;
-	}
-	public BigDecimal getImpNeto() {
-		return impNeto;
-	}
-	public void setImpNeto(BigDecimal impNeto) {
-		this.impNeto = impNeto;
-	}
-	public BigDecimal getImpIva() {
-		return impIva;
-	}
-	public void setImpIva(BigDecimal impIva) {
-		this.impIva = impIva;
-	}
-	public BigDecimal getImpTrib() {
-		return impTrib;
-	}
-	public void setImpTrib(BigDecimal impTrib) {
-		this.impTrib = impTrib;
-	}
-	public BigDecimal getImpOpEx() {
-		return impOpEx;
-	}
-	public void setImpOpEx(BigDecimal impOpEx) {
-		this.impOpEx = impOpEx;
-	}
-	public String getFechaCbte() {
-		return fechaCbte;
-	}
-	public void setFechaCbte(String fechaCbte) {
-		this.fechaCbte = fechaCbte;
-	}
-	public String getFechaVencPago() {
-		return fechaVencPago;
-	}
-	public void setFechaVencPago(String fechaVencPago) {
-		this.fechaVencPago = fechaVencPago;
-	}
-	public String getFechaServDesde() {
-		return fechaServDesde;
-	}
-	public void setFechaServDesde(String fechaServDesde) {
-		this.fechaServDesde = fechaServDesde;
-	}
-	public String getFechaServHasta() {
-		return fechaServHasta;
-	}
-	public void setFechaServHasta(String fechaServHasta) {
-		this.fechaServHasta = fechaServHasta;
-	}
-	public String getMonedaId() {
-		return monedaId;
-	}
-	public void setMonedaId(String monedaId) {
-		this.monedaId = monedaId;
-	}
-	public BigDecimal getMonedaCtz() {
-		return monedaCtz;
-	}
-	public void setMonedaCtz(BigDecimal monedaCtz) {
-		this.monedaCtz = monedaCtz;
-	}
-	public Tributo[] getTributos() {
-		return tributos;
-	}
-	public void setTributos(Tributo[] tributos) {
-		this.tributos = tributos;
-	}
-	public TipoIva[] getIvas() {
-		return ivas;
-	}
-	public void setIvas(TipoIva[] ivas) {
-		this.ivas = ivas;
-	}
 }
