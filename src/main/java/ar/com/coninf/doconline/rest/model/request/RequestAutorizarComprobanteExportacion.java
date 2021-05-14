@@ -1,5 +1,6 @@
 package ar.com.coninf.doconline.rest.model.request;
 
+import ar.com.coninf.doconline.rest.model.tx.Item;
 import ar.com.coninf.doconline.rest.model.tx.Permiso;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -10,17 +11,17 @@ public class RequestAutorizarComprobanteExportacion extends RequestAutorizarComp
 	private static final long serialVersionUID = 1L;
 	public static final String SERVICIO = "/autorizar/comprobante/exportacion";
 	
-//	private Integer tipoExpo;
-//	permisoExistente
-//	dstCmp
-//	idImpositivo
-//	obsComerciales
-//	obs
-//	formaPago
-//	incoterms
-//	incoterms_ds
-//	idioma_cbte
-//	private Permiso[] permisos;
-//	private Item[] items;
+	private Integer tipoExpo;
+	private String permisoExistente;
+	private Integer dstCmp;
+	private String idImpositivo;
+	private String obsComerciales;
+	private String obsGenerales;
+	private String formaPago;
+	private String incoterms;
+	private String incotermsDs;
+	private String idiomaCbte;
+	private Permiso[] permisos;
+	private Item[] items;
 
 }

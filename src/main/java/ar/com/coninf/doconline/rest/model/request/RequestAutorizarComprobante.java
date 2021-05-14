@@ -41,15 +41,4 @@ public class RequestAutorizarComprobante extends Request {
 	private DatoOpcional[] datosOpcionales;
 	private PeriodoComprobanteAsociado[] periodoComprobanteAsociados;
 	
-	//tributo_id=4 						--> Id de la tablas de AFIP
-	//tributo_desc="Impuestos internos"	--> Desc de la Tabla de AFIP 
-	//tributo_base_imp=100.00
-	//tributo_alic=1.00
-	//tributo_importe=1.00
-	//{"tributo_id":"4", "tributo_desc":"Impuestos internos", "tributo_base_imp":"100.00", "tributo_alic":"1.00", "tributo_importe":"1.00"}" --> JSON
-
-	//iva_id=5 				--> Id de la tabla de AFIP
-	//iva_base_imp=100.00
-	//iva_importe=21.00 	--> Alicuota de la tabla de AFIP
-	//{"iva_id":"5", "iva_base_imp":"100.00", "iva_importe":"21.00"} --> JSON
 }
