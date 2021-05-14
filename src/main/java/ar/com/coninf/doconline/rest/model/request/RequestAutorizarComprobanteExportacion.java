@@ -14,6 +14,9 @@ public class RequestAutorizarComprobanteExportacion extends RequestAutorizarComp
 	private Integer tipoExpo;
 	private String permisoExistente;
 	private Integer dstCmp;
+	private String cliente;
+	private String cuitPaisCliente;
+	private String domicilioCliente;
 	private String idImpositivo;
 	private String obsComerciales;
 	private String obsGenerales;

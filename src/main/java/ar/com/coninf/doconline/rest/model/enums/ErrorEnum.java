@@ -31,6 +31,7 @@ public enum ErrorEnum {
 	ERROR_PENDIENTE_AUTORIZADO(14002, "Movimiento pendiente ya Autorizado."),
 	ERROR_DIFERENCIA_TOTAL_IVA(14003, "Diferencia en la suma de Ivas contra Total de Iva."),
 	ERROR_DIFERENCIA_TOTAL_TRIBUTO(14004, "Diferencia en la suma de Tributos contra Total de Tributo."),
+	ERROR_DIFERENCIA_TOTAL_ITEMS(14005, "Diferencia en la suma de Items contra Total de Facturas."),
 	
 	ERROR_ORIGEN_AFIP(15001, "Ocurrio Error en AFIP."),
 	ERROR_COMUNICACION_AFIP(15002, "Ocurrio de Comunicacion de AFIP."),
