@@ -2,6 +2,7 @@ package ar.com.coninf.doconline.rest.model.request;
 
 import java.math.BigDecimal;
 
+import ar.com.coninf.doconline.rest.model.tx.Actividad;
 import ar.com.coninf.doconline.rest.model.tx.ComprobanteAsociado;
 import ar.com.coninf.doconline.rest.model.tx.DatoOpcional;
 import ar.com.coninf.doconline.rest.model.tx.Iva;
@@ -34,11 +35,14 @@ public class RequestAutorizarComprobante extends Request {
 	private String fechaServDesde;
 	private String fechaServHasta;
 	private String monedaId;
+	private Integer condicionIvaReceptorId;
+	private String cancelaMismaMonedaExt;
 	private BigDecimal monedaCtz;
 	private Tributo[] tributos;
 	private Iva[] ivas;
 	private ComprobanteAsociado[] comprobantesAsociados;
 	private DatoOpcional[] datosOpcionales;
 	private PeriodoComprobanteAsociado[] periodoComprobanteAsociados;
+	private Actividad[] actividades;
 	
 }
